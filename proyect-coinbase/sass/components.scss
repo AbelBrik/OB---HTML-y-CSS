@@ -1,0 +1,296 @@
+$color-pri: #0051ff;
+$color-pri-hover: #004beb;
+$color-sec:  #ffffff;
+
+// ----------------------------- BOTONES
+.btns-l{
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 0 15px;
+    transition: all 80ms ease-in-out 0s;
+    padding: 24px 60px;
+    font-size: 16px;
+    height: 68px;
+    line-height: 14px;
+}
+
+.btns-s{
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 0;
+    transition: all 80ms ease-in-out 0s;
+     padding: 10px 12px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 14px;
+}
+
+.btn-pri{
+    border: 1px solid $color-pri;
+    background-color: $color-pri;
+    color: $color-sec;
+    &:hover{
+        background-color: $color-pri-hover;
+        border-color: $color-pri-hover;
+    }
+}
+
+.btn-sec{
+    background-color: $color-sec;
+    border: 2px solid $color-pri;;
+    color: $color-pri;
+    &:hover{
+        border: none;
+    }
+}
+
+.btn-buy{
+        width: auto;
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        background-color: #098551;
+        transition: all 80ms ease-in-out 0s;
+        padding: 5px 16px;
+        font-size: 14px;
+        border: 1px solid #098551;
+        font-weight: 700;
+}
+
+.input{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid rgb(224, 221, 221);
+}
+
+// ----------------- ICONOS
+.icon-s{
+    font-size: 0.75rem;
+    font-weight: 900;
+    color: $color-pri;
+    padding: 0.1rem 0.25rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00000040;
+    cursor: pointer;
+}
+.icon-m{
+    height: 38px;
+    width: 38px;
+    margin-right: 15px;
+    border-radius: 100%;
+}
+.icon-l{
+    margin-top: -8px;
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    margin-right: var(--spacing-4);
+    background-color: var(--background);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(218, 225, 233, 0.557) 0px 8px 16px;
+}
+.icon-bit{
+    padding: 0.1rem 0.25rem;
+    border-radius: 50%;
+    background-color: $color-pri-hover;
+    color: $color-sec;
+    transform: rotate(45deg);
+}
+.icon-arrow{
+    padding: 0.1rem 0.25rem;
+    color: $color-pri;
+}
+
+// ------------------ NAV
+.nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 66px;
+    border-bottom: solid 1px #ddd;
+    background-color: white;
+}
+.link-nav a, .sign-nav a{
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+}
+.link-nav a:hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: $color-pri;
+    text-underline-offset: 22px;
+    text-decoration-thickness: 4px;
+}
+.sign-nav a:hover{
+    color: $color-pri;
+}
+
+// HOME
+.sect-home{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.sect-home-left{
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.sect-home-left a, .rew-right a, .card-benef a{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 15px;
+    color: $color-pri;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.sect-home-left p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+.svg{
+    width: 400px;
+}
+
+// TABLE
+.table{
+    font-size: 18px;
+}
+.perc{
+    color: rgb(207, 32, 47);
+}
+th[scope]{
+    color: rgb(137, 137, 137);
+    font-weight: 400;
+}
+tbody th, .numb{
+    text-align: center;
+}
+
+// SECTION REWARD
+.sect-rewards{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.rew-right{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.rew-right div{
+    display: flex;
+    border-radius: 8px;
+    transition: all 500ms ease 0s;
+    cursor: pointer;
+    padding: 24px;
+}
+.rew-right div:hover{
+    box-shadow: 0px 0px 6px 1px rgba(113, 111, 111, 0.75);
+}
+.rew-right p{
+    margin-left: 24px;
+    color: #098551;
+}
+
+
+// SECTION PORTFOLIO
+.sect-portfolio{
+    margin-top: 100px;
+}
+.portfolio{
+    display: flex;
+    align-items: center;
+}
+.card-portfolio{
+    display: flex;
+    flex-direction: row;
+}
+.card-portfolio p{
+    color: rgb(91,97,110);
+}
+
+// KPIS
+.kpis{
+    background-color: $color-pri;
+    width: 100%;
+    color: $color-sec;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 216px;
+}
+.value{
+    font-size: 56px;
+    text-align: center;
+}
+
+// SECT BENEFITS
+.sect-benef, .sect-started{
+    margin: 100px auto;
+}
+.container-benef, .container-started{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.card-benef{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+// SECT ASTRO
+.sect-astro{
+    display: flex;
+    background-color: rgb(245,248,255);
+    height: 460px;
+    align-items: center;
+    justify-content: space-between;
+}
+.astro-left{
+    margin-left: 100px;
+    max-width: 350px;
+}
+
+// FOOTER
+footer{
+    margin-top: 100px;
+}
+.container-footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+footer p{
+    cursor: pointer;
+    font-weight: 400;
+    color: grey;
+}
+.bold{
+    color: #000 !important;
+    font-weight: 600 !important;
+    cursor: none !important;
+}

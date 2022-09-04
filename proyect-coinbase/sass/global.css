@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: 62px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.centered {
+  text-align: center;
+}
+
+hr {
+  width: 100px;
+}/*# sourceMappingURL=global.css.map */
